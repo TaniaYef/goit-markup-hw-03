@@ -62,6 +62,7 @@ ul {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
+  margin: 0 auto;
 }
 .list {
   list-style: none;
@@ -232,6 +233,8 @@ ul {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .logo-b-footer {
   font-family: "Raleway", sans-serif;
@@ -244,6 +247,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-top: 20px;
 }
 .mail-tel-footer {
   font-style: normal;
@@ -252,16 +256,33 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
 }
 
 /* Portfolio */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .button-nav {
   display: flex;
   justify-content: center;
 }
-.name-portfolio-1 {
-  visibility: hidden;
+.portfolio {
+  padding-bottom: 94px;
+}
+.main-btn-portfolio {
+  padding-bottom: 50px;
 }
 .button-filter {
   font-style: normal;
@@ -284,9 +305,6 @@ ul {
 .button-filter:focus {
   color: #ffffff;
   background-color: #2196f3;
-}
-.name-portfolio-2 {
-  visibility: hidden;
 }
 .link-portfolio-name {
   display: block;
@@ -316,13 +334,18 @@ ul {
 .main-portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  justify-content: space-between;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .main-portfolio .item {
   display: block;
   margin-right: 30px;
   margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
