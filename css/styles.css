@@ -189,7 +189,7 @@ ul {
 .container-services .item:not(:last-child) {
   margin-right: 30px;
 }
-.container-services > .link {
+.container-services > .item {
   display: block;
 }
 
@@ -251,8 +251,7 @@ ul {
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
-  padding-bottom: 20px;
-  height: 252px;
+  padding-bottom: 60px;
 }
 .logo-b-footer {
   font-family: "Raleway", sans-serif;
@@ -391,7 +390,6 @@ ul {
   background: #ffffff;
   border: 1px solid #eeeeee;
   width: 370px;
-  height: 404px;
 }
 .main-portfolio > .item:nth-child(3n) {
   margin-right: 0;
